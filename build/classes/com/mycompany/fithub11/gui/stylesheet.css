@@ -1,0 +1,204 @@
+
+.root {
+    -fx-background-image: url('../images/seancee.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #A4A4A4;
+    -fx-opacity: 0.9;
+}
+
+.button {
+    -fx-background-color: #F2C94C;
+    -fx-text-fill: #333333;
+    -fx-border-color: #A4A4A4;
+    -fx-border-radius: 0px;
+    -fx-padding: 8px 16px;
+}
+
+#deleteButton {
+    -fx-background-color: #FF6961;
+}
+
+#addEventButton {
+    -fx-background-color: #77DD77;
+}
+
+#eventForm {
+    -fx-background-color: rgba(255, 255, 255, 0.7); /* low opacity white */
+    -fx-opacity: 0.9;
+    -fx-padding: 16px;
+    -fx-border-color: #A4A4A4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+VBox {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    
+}
+
+HBox {
+    -fx-spacing: 10;
+    
+}
+
+Label {
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+TextField {
+    -fx-font-size: 14pt;
+}
+
+Button {
+    -fx-font-size: 14pt;
+}
+
+
+.table-row-cell {
+    -fx-background-color: #f5f5f5;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fafafa;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #bbdefb;
+}
+
+.table-row-cell:odd:selected {
+    -fx-background-color: #90caf9;
+}
+
+.table-row-cell .table-cell {
+    -fx-opacity: 0.8;
+}
+
+
+TableView {
+    -fx-font-size: 14pt;
+}
+#ticketListView {
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+}
+
+.list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: #ccc;
+}
+
+.list-cell:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+.list-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.list-cell .ticket-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.list-cell .ticket-details {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+}
+
+.list-cell .ticket-price {
+    -fx-font-size: 18px;
+    -fx-text-fill: #0076c8;
+}
+
+/* Event Card */
+
+#eventPane {
+    -fx-background-color: rgba(173, 216, 230, 0.7); /* pastel blue */
+   -fx-background-radius: 10px;
+    -fx-border-color: #fff4e3; /* pastel yellow */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-padding: 20px;
+}
+
+.event-card:hover {
+    -fx-background-color: #b3d8ff; /* lighter pastel blue */
+}
+
+.event-card-image {
+    fit-width: 100px;
+    fit-height: 100px;
+    padding: 10px 0;
+}
+
+.event-card-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10px 0;
+}
+
+.event-card-description {
+    -fx-font-size: 16px;
+    -fx-padding: 0 0 10px 0;
+}
+
+
+.event-card-location {
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 5px 0;
+}
+
+.event-card-type {
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 5px 0;
+}
+
+.event-card-date {
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 5px 0;
+}
+
+.event-card-weather {
+    -fx-font-size: 14px;
+    -fx-padding: 5px 0;
+}
+
+.event-card-button {
+    
+    -fx-background-color: #fff4e3; /* pastel yellow */
+    -fx-text-fill: #333; /* dark gray */
+    -fx-border-color: #333; /* dark gray */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+}
+
+.event-card-button:hover {
+    -fx-background-color: #333; /* dark gray */
+    -fx-text-fill: #fff4e3; /* pastel yellow */
+}
+.tile-pane {
+    -fx-alignment: center;
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+    -fx-padding: 20;
+}

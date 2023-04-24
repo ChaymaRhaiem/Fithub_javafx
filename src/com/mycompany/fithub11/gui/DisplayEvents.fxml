@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="900" prefWidth="800.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fithub11.gui.DisplayEventsController">
+        <Label text="Events" />
+
+    <VBox opacity="0.88" prefHeight="366.0" prefWidth="739.0" spacing="10.0">
+        <HBox>
+            <Label text="Nom Event">
+            <font>
+               <Font name="Calibri" size="12.0" />
+            </font></Label>
+            <TextField fx:id="nomEventField" prefHeight="11.0" prefWidth="241.0" />
+        </HBox>
+
+        <HBox>
+            <Label text="Type" />
+            <TextField fx:id="descriptionField" prefWidth="800.0" />
+        </HBox>
+
+        <HBox>
+            <Label text="Description" />
+            <TextField fx:id="typeField" prefWidth="800.0" />
+        </HBox>
+
+        <HBox>
+            <Label text="Location" />
+            <TextField fx:id="locationField" opacity="0.36" prefHeight="27.0" prefWidth="400.0" />
+        </HBox>
+
+        <HBox>
+            <Label text="Date" />
+            <DatePicker fx:id="dateField" />
+        </HBox>
+
+        <HBox alignment="CENTER" opacity="0.98" spacing="10.0">
+            <Button fx:id="chooseImageButton" onAction="#handleChooseImage" text="Choose Image" textFill="#00072e">
+            <font>
+               <Font name="Book Antiqua" size="14.0" />
+            </font></Button>
+            <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" preserveRatio="true">
+                <image>
+                    <Image url="@../images/placeholder.png" />
+                </image>
+            </ImageView>
+   
+           <Button fx:id="saveButton" onAction="#handleSave" text="Save" />
+        </HBox>
+      <effect>
+         <ColorAdjust />
+      </effect>
+
+    </VBox>
+
+    <TableView fx:id="eventTable" prefHeight="424.0" prefWidth="822.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50" text="ID" />
+            <TableColumn fx:id="nomEventColumn" prefWidth="150" text="Name" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="600" text="Description" />
+            <TableColumn fx:id="locationColumn" prefWidth="140" text="Location" />
+            <TableColumn fx:id="typeColumn" prefWidth="100" text="Type" />
+            <TableColumn fx:id="dateColumn" prefWidth="200" text="Date" />
+            <TableColumn fx:id="imageColumn" prefWidth="200" text="Image" />
+
+        </columns>
+
+    </TableView>
+
+    <HBox spacing="10.0">
+        <ImageView fx:id="imageView" preserveRatio="true" />
+        <Button fx:id="deleteButton" onAction="#handleDeleteEvent" text="Delete" textFill="#e1d9d9" />
+        <Button fx:id="addEventButton" onAction="#handleAddEventButton" text="Add Event" />
+        <Button onAction="#addButtonAddTicketToTableEvent" prefHeight="45.0" prefWidth="141.0" text="Add Ticket" />
+
+
+
+    </HBox>
+
+</VBox>
